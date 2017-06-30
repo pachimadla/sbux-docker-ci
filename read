@@ -1,0 +1,8 @@
+----To Build Docker image---
+docker build -f Dockerfile -t sbux-docker-poc .
+
+----To Run docker image----
+docker run -p 8085:8085 sbux-docker-poc
+
+---To Test application in browser----
+http://localhost:8085/rest/docker/hello
